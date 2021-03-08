@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using HRManagementApp.Models;
 
 namespace HRManagementApp.Data
 {
@@ -12,5 +13,6 @@ namespace HRManagementApp.Data
             : base(options)
         {
         }
+        public DbSet<HRManagementApp.Models.Employee> Employee { get; set; }
     }
 }
