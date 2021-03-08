@@ -14,5 +14,6 @@ namespace HRManagementApp.Data
         {
         }
         public DbSet<HRManagementApp.Models.Employee> Employee { get; set; }
+        public DbSet<HRManagementApp.Models.Company> Company { get; set; }
     }
 }
